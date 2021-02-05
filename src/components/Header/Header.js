@@ -1,4 +1,5 @@
 import React from 'react';
+import headerLogo from '../../assets/header/logo.png';
 import classes from './Header.module.sass';
 
 function Header() {
@@ -6,7 +7,7 @@ function Header() {
     <div className={ classes.header }>
       <div className={ classes.headerLogoSection }> 
         <div className={ classes.headerLogo }>
-          <img src='./assets/header-assets/logo.png'></img>
+          <img src={ headerLogo } alt='headerLogo'></img>
         </div>
         <div className={ classes.headerTitle}> 
           <h1>BLA BLA</h1>
