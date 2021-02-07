@@ -44,7 +44,7 @@ function AboutUsSection() {
       <div className={classes.employeeSection}>
         { persons && persons.map(person => {
           return (
-            <div className={classes.employeeCard}>
+            <div className={classes.employeeCard} key={ person.id }>
               <div className={classes.employeePhoto}>
                 <img src={ person.photo } alt={ person.name }></img>
               </div>
