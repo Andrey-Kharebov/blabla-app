@@ -27,6 +27,7 @@
     justify-content: space-between
 
     .employeeCard
+      position: relative
       background: #fff
       color: #000
       width: 310px
@@ -34,6 +35,7 @@
       display: flex
       flex-direction: column
       align-items: center
+    
 
       .employeePhoto
         width: 100%
@@ -68,3 +70,46 @@
           font-size: 20px
           letter-spacing: 0px
           color: #000
+
+      .socials 
+        display: none
+      
+      &:hover
+        .socials
+          display: block
+          position: absolute
+          top: 134px
+          width: 254px
+          height: 68px
+
+          ul
+            width: 100%
+            height: 100%
+            display: flex
+            justify-content: space-between
+            list-style-type: none
+            align-items: center
+
+            li 
+              background: rgba(72, 159, 136, .7)
+              width: 100%
+              height: 100%
+              display: flex
+              align-items: center
+              justify-content: center  
+
+              &:hover 
+                background: rgb(72, 159, 136)  
+                cursor: pointer       
+              
+            li:first-child 
+              img
+                width: 21px
+            
+            li:nth-child(2),
+            li:nth-child(3),
+            li:nth-child(4)
+              img
+                width: 35px
+                
+
