@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.ymaps-2-1-78-placemark-overlay.ymaps-2-1-78-user-selection-none:nth-child(2), 
+.ymaps-2-1-78-placemark-overlay.ymaps-2-1-78-user-selection-none:nth-child(4) {
+  display: none;
+}
