@@ -8,7 +8,7 @@ import PortfolioSection from './components/PortfolioSection/PortfolioSection';
 
 function App() {
   return (
-    <div>
+    <div id='top'>
       <Header />
       <BrandSection />
       <PortfolioSection />

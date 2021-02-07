@@ -6,7 +6,7 @@ import MapComponent from './MapComponent/MapComponent';
 function ContactUsSection() {
   
   return (
-    <div className={ classes.contactUsSection }>
+    <div id='contact' className={ classes.contactUsSection }>
         <h1>Contact Us</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
         <div className={ classes.formAndMapSection }>

@@ -3,7 +3,7 @@ import classes from './BrandSection.module.sass'
 
 function BrandSection() {
   return (
-    <div className={ classes.brandSection }>
+    <div id='brand' className={ classes.brandSection }>
       <h1>We Build <span>Brand</span></h1>
       <p>Lorem ipsum dolor sit amet consectetur 
         adipiscing elit sed diam nonummy nibh 

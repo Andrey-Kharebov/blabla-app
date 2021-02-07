@@ -68,7 +68,7 @@ function PortfolioSection() {
   }
 
   return (
-    <div className={ classes.portfolioSection }>
+    <div id='portfiolio' className={ classes.portfolioSection }>
       <h1>Portfolio</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>   
       <div className={ classes.portfolioMenu }>

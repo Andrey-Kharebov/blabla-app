@@ -38,7 +38,7 @@ function AboutUsSection() {
     }
   ])
   return (
-    <div className={classes.aboutUsSection}>
+    <div id='about' className={classes.aboutUsSection}>
       <h1>About Us</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
       <div className={classes.employeeSection}>
