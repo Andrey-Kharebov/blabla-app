@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classes from './PortfolioSection.module.sass';
 import cameraImg from '../../assets/portfolioSection/camera.png';
 import musicImg from '../../assets/portfolioSection/music.png';
@@ -6,9 +6,42 @@ import settingsImg from '../../assets/portfolioSection/settings.png';
 import safariImg from '../../assets/portfolioSection/safari.png';
 import phoneImg from '../../assets/portfolioSection/phone.png';
 import bubblesImg from '../../assets/portfolioSection/bubbles.png';
-// import hoveredBG from '../../assets/portfolioSection/hoveredBg.png';
 
 function PortfolioSection() {
+  const [portfolio] = useState([
+    {
+      title: 'camera',
+      img: cameraImg
+    },
+    {
+      title: 'music',
+      img: musicImg
+    },
+    {
+      title: 'setting',
+      img: settingsImg
+    },
+    {
+      title: 'safari',
+      img: safariImg
+    },
+    {
+      title: 'phone',
+      img: phoneImg
+    },
+    {
+      title: 'bubble',
+      img: bubblesImg
+    },
+    {
+      title: 'camera',
+      img: cameraImg
+    },
+    {
+      title: 'music',
+      img: musicImg
+    }
+  ])
   return (
     <div className={ classes.portfolioSection }>
       <h1>Portfolio</h1>
@@ -23,14 +56,18 @@ function PortfolioSection() {
       </div>
       <div className={ classes.portfolioMenuCircles }>
         <ul>
-          <li><img src={ cameraImg } alt='cameraImg'></img></li> 
-          <li><img src={ musicImg } alt='musicImg'></img></li>
-          <li><img src={ settingsImg } alt='settingsImg'></img></li>
-          <li><img src={ safariImg } alt='safariImg'></img></li>
-          <li><img src={ phoneImg } alt='phoneImg'></img></li>
-          <li><img src={ bubblesImg } alt='bubblesImg'></img></li>
-          <li><img src={ cameraImg } alt='cameraImg'></img> </li> 
-          <li><img src={ musicImg } alt='musicImg'></img></li>
+          {portfolio && portfolio.map(work => {
+            return (
+              <li>
+                <img src={ work.img } alt={ work.title }></img>
+                <div className={ classes.divForHover }>
+                  <div className={ classes.zoomCircle }>
+                    <i class="fas fa-search"></i>
+                  </div>
+                </div>
+              </li>
+            )
+          })}
         </ul>
       </div>
     </div>

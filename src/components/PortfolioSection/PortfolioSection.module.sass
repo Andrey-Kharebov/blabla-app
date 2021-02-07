@@ -56,16 +56,44 @@
       list-style-type: none
 
       li
+        position: relative
         width: 240px
         height: 255px
-
+        
         img
           width: 100%
           height: 100%
+
+        .divForHover
+          display: none
         
         &:hover
-          content: url('../../assets/portfolioSection/hoveredBg.png')
-                  
 
-      
+          .divForHover
+            position: absolute
+            top: 0
+            width: 240px
+            height: 255px
+            border-radius: 130px 130px 130px 130px
+            background: rgba(75, 168, 158, .6)
+            display: flex
+            align-items: center
+            justify-content: center
+
+            .zoomCircle 
+              width: 60px
+              height: 60px
+              border: 1px solid red
+              background: #000
+              opacity: .2
+              border-radius: 130px
+              display: flex
+              align-items: center
+              justify-content: center
+
+              i
+                color: #fff
+                font-size: 30px
+
+    
       
