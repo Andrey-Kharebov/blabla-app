@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import classes from './BrandSection.module.sass'
 
 function BrandSection() {
@@ -10,9 +11,13 @@ function BrandSection() {
         euismod tincidunt ut laoreet dolore magna
         aliquam erat volutpat.</p>   
       <button className={ classes.learnMore }>LEARN MORE</button>
-      <div className={ classes.arrowDown }>
-        <i className="fas fa-chevron-circle-down"></i>
-      </div>
+      <Link
+        to='contact'
+        smooth={true}
+      ><div className={ classes.arrowDown }>
+          <i className="fas fa-chevron-circle-down"></i>
+        </div>
+      </Link>
     </div>
   )
 }
